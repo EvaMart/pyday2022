@@ -11,7 +11,7 @@ docker pull emartps/pyday-mongo
 
 ### Option 2: (build - no account require)
 ```shell
-docker build -t emartp/pyday-mongo .
+docker build -t emartps/pyday-mongo .
 ```
 
 ## 2. Run the docker compose

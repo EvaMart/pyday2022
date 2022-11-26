@@ -1,6 +1,7 @@
 # Front-end app - Nuxt
 
-## First Steps
+
+## Create a nuxt app
 
 Create a new nuxt project using the nuxt CLI. Enter in a terminal:
 
@@ -67,3 +68,15 @@ In your browser,  go the URL  [http://localhost:3000/](http://127.0.0.1:3000):
 ![browser screenshot](Screenshot-vue.png)
 
 🎉  The app works!
+
+## Requirements 
+- vue-code-highlight
+```
+npm i vue-code-highlight
+```
+
+## Using the code in this repository 
+```
+cd nuxt-frontend 
+npm install
+```

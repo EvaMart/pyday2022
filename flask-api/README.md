@@ -1,5 +1,19 @@
 # REST API - Flask 
 
+## Requirements 
+
+Option 1 (recommended): With pipenv:
+```
+pipenv shell
+pipenv install
+```
+
+Option 2: With pip:
+```
+pip install -r requirements
+```
+
+
 ## First steps
 ### Install Flask
 - Option 1: Using a virtual environment:
@@ -41,4 +55,9 @@ In your browser, go to [http://127.0.0.1:5000](http://127.0.0.1:5000):
 
 🎉  The app works! 
 
-## Creating the endpoints we need 
+
+## Endppoints
+
+### [GET, POST] /snippet
+We only need one endpoint, to retrieve and push code snippets. 
+

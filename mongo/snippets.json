@@ -1,0 +1,128 @@
+[
+  {
+    "body": "# Use `os.path.exists` to check both files and directories: \nimport os.path \nos.path.isfile(fname)",
+    "collection": [
+      ""
+    ],
+    "description": "Check whether a file exists or not, without using the try statement",
+    "related": [],
+    "source": [
+      "https://stackoverflow.com/questions/89228/how-do-i-execute-a-program-or-call-a-system-command"
+    ],
+    "tags": [
+      "Python",
+      "filesystem"
+    ],
+    "title": "Check whether a file exists or not, without using exceptions",
+    "type": [
+      "code"
+    ]
+  },
+  {
+    "body": "# In Python 3.9.0 or greater (released 17 October 2020, PEP-584): \nz = x | y",
+    "collection": [],
+    "description": "For dictionaries `x` and `y`, their shallowly-merged dictionary `z` takes values from `y`, replacing those from `x`.",
+    "related": [],
+    "source": [
+      "https://stackoverflow.com/questions/38987/how-do-i-merge-two-dictionaries-in-a-single-expression"
+    ],
+    "tags": [
+      "Python",
+      "dictionary"
+    ],
+    "title": "Merge two Python dictionaries in a single expression",
+    "type": [
+      "code"
+    ]
+  },
+  {
+    "body": "for idx, x in enumerate(xs):\n    print(idx, x)",
+    "description": "It is non-pythonic to manually index via for i in range(len(xs)): x = xs[i] or manually manage an additional state variable. Use the built-in function enumerate().",
+    "source": [
+      "https://stackoverflow.com/a/522578"
+    ],
+    "tags": [
+      "Python"
+    ],
+    "title": "Accessing the index in 'for' loops",
+    "type": "Code"
+  },
+  {
+    "body": "import subprocess\nsubprocess.run([\"ls\", \"-l\"])\n",
+    "description": "To call an external command within Python as if I'd typed it in a shell or command prompt, use the subprocess module in the standard library.",
+    "source": [
+      "https://stackoverflow.com/a/89243"
+    ],
+    "tags": [
+      "Python",
+      "cmd"
+    ],
+    "title": "Execute a program from Python",
+    "type": "Code"
+  },
+  {
+    "body": "globvar = 0\n\ndef set_globvar_to_one():    global globvar    # Needed to modify global copy of globvar\n    globvar = 1\n\ndef print_globvar():\n    print(globvar)     # No need for global declaration to read value of globvar\n\nset_globvar_to_one()\nprint_globvar()       # Prints 1",
+    "description": "You can use a global variable within other functions by declaring it as global within each function that assigns a value to it.\nSince it's unclear whether globvar = 1 is creating a local variable or changing a global variable, Python defaults to creating a local variable, and makes you explicitly choose the other behavior with the global keyword.",
+    "source": [
+      "https://stackoverflow.com/a/423596"
+    ],
+    "tags": [
+      "Python",
+      "functions"
+    ],
+    "title": "Using global variables in a function",
+    "type": "Code"
+  },
+  {
+    "body": "from matplotlib.pyplot import figure\nimport matplotlib.pyplot as plt\n\nx = [1, 2]\ny = [1, 1]\n\n# without resizing\nplt.plot(x, y)\n\n# with resizing\nfigure(figsize=(8, 6), dpi=80)\nplt.plot(x, y)",
+    "description": "`figure` tells you the call signature:",
+    "source": [
+      "https://stackoverflow.com/a/638443"
+    ],
+    "tags": [
+      "Python",
+      "matplotlib"
+    ],
+    "title": " Set the size of Matplotlib figures",
+    "type": "Code"
+  },
+  {
+    "body": "# Generator that yields evenly-sized chunks\ndef chunks(lst, n):\n    \"\"\"Yield successive n-sized chunks from lst.\"\"\"\n    for i in range(0, len(lst), n):\n        yield lst[i:i + n]\n\n# One-liner\n[lst[i:i + n] for i in range(0, len(lst), n)]",
+    "description": "Split a list of arbitrary length into equal sized chunks",
+    "source": [
+      "https://stackoverflow.com/a/312464"
+    ],
+    "tags": [
+      "Python"
+    ],
+    "title": "Split a list into equal sized chunks",
+    "type": "Code"
+  },
+  {
+    "body": "# alternative 1\nfrom datetime import datetime\ndatetime.strptime('Jun 1 2005  1:33PM', '%b %d %Y %I:%M%p')\n\n#alternative 2\nfrom dateutil import parser\nparser.parse(\"Aug 28 1999 12:00AM\") ",
+    "description": "datetime.strptime parses an input string in the user-specified format into a timezone-naive datetime object.\ndateutil can be used too.",
+    "source": [
+      "https://stackoverflow.com/a/466376",
+      "https://stackoverflow.com/a/470303"
+    ],
+    "tags": [
+      "Python"
+    ],
+    "title": "Convert string \"Jun 1 2005 1:33PM\" into datetime",
+    "type": "Code"
+  },
+  {
+    "body": "# To get full path to the directory a Python file is contained in\nimport os \ndir_path = os.path.dirname(os.path.realpath(__file__))\n\n# To get the current working directory use \nimport os\ncwd = os.getcwd()\n\n# Using pathlib \n## To get current directory\nfrom pathlib import Path\nprint(Path.cwd()) # /home/skovorodkin/stack\n\n## To get script file path\nprint(Path(__file__).resolve())  # /home/skovorodkin/stack/scripts/1.py",
+    "description": "",
+    "source": [
+      "https://stackoverflow.com/a/46061872",
+      "https://stackoverflow.com/a/13720875"
+    ],
+    "tags": [
+      "Python",
+      "filesystem"
+    ],
+    "title": "Find the current directory and file's directory",
+    "type": "Code"
+  }
+]

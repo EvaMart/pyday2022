@@ -6,7 +6,7 @@
 
 Pull the image
 ```
-docker pull emartp/pyday-mongo 
+docker pull emartps/pyday-mongo 
 ``` 
 
 ### Option 2: (build - no account require)

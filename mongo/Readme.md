@@ -2,11 +2,8 @@
 
 ## 1. Obtain docker image
 
-### Option 1: (no build - required DockerHub account)
-Login in [DockerHub](https://hub.docker.com/repository/docker/emartps/pyday-mongo) with your credentials
-```shell
-docker login
-```
+### Option 1: (no build )
+
 Pull the image
 ```
 docker pull emartp/pyday-mongo 
